@@ -41,14 +41,14 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-                 I'm a dedicated Computer Science student with a strong focus on 
+                 I&apos;m a dedicated Computer Science student with a strong focus on 
                  front-end development. 
                  I specialize in building responsive, 
                  user-friendly interfaces using JavaScript, 
                  React, Next.js, and Tailwind CSS. 
                  I enjoy turning ideas into interactive digital experiences, 
-                 and I'm always exploring new ways to improve performance, 
-                 accessibility, and design. Whether I'm working on personal
+                 and I&apos;m always exploring new ways to improve performance, 
+                 accessibility, and design. Whether I&apos;m working on personal
                  projects or collaborating with others, 
                  I aim to write clean, maintainable code that brings real value to users.
             </p>
