@@ -1,9 +1,9 @@
 "use client";
-import Brain from "@/components/brain";
+import Brain from "@/components/Brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import { Pacifico } from "next/font/google";
+
 
 const AboutPage = () => {
   const containerRef = useRef();
