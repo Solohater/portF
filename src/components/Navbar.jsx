@@ -103,27 +103,36 @@ const Navbar = () => {
         {/**MENU */}
         <div className='md:hidden'>
             {/**MENU BUTTON */}
-            <button className='w-10 h-8 flex flex-col justify-between z-50 relative' 
-            onClick={()=>setOpen((prev) => !prev)}>
-                <motion.div 
-                    variants={topVariants} 
-                    animate={open ? "opened" : "closed"}
-                    className='w-10 h-1 rounded origin-left'
-                    style={{backgroundColor:open ? undefined: "black"}}
-                    ></motion.div>
-                <motion.div 
-                    variants={centerVariants} 
-                    animate={open ? "opened" : "closed"}
-                    className='w-10 h-1 rounded'
-                    style={{backgroundColor:open ? undefined: "black"}}
-                    ></motion.div>
-                <motion.div 
-                    variants={bottomVariants} 
-                    animate={open ? "opened" : "closed"}
-                    className='w-10 h-1 rounded origin-left'
-                    style={{backgroundColor:open ? undefined: "black"}}
-                    ></motion.div>
+          <button
+            className="w-10 h-8 flex flex-col justify-between z-50 relative"
+            onClick={() => setOpen((prev) => !prev)}
+            >
+            <motion.div
+                variants={topVariants}
+                animate={open ? "opened" : "closed"}
+                className="w-10 h-1 rounded origin-left bg-black dark:bg-white"
+                />
+
+            <motion.div
+                variants={centerVariants}
+                animate={open ? "opened" : "closed"}
+                className={`w-10 h-1 rounded ${
+                open
+                    ? "bg-black dark:bg-white"
+                    : "bg-black dark:bg-white"
+                }`}
+            ></motion.div>
+            <motion.div
+                variants={bottomVariants}
+                animate={open ? "opened" : "closed"}
+                className={`w-10 h-1 rounded origin-left ${
+                open
+                    ? "bg-black dark:bg-white"
+                    : "bg-black dark:bg-white"
+                }`}
+            ></motion.div>
             </button>
+
             {/**MENU LIST */}
             {open && (
             <motion.div variants={listVariants} initial="closed" animate="opened" className='z-40 flex flex-col absolute top-0 left-0 w-screen h-screen bg-black text-white items-center justify-center gap-8 text-4xl'>
