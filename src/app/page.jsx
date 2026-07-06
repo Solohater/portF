@@ -15,7 +15,7 @@ const Homepage = () => {
         {/* IMAGE CONTAINER */}
         <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-auto relative rounded-md overflow-hidden">
           <Image
-            src="/hero2.jpg"
+            src="/hero.jpg"
             alt="Hero Banner"
             fill
             className="object-cover rounded-md"
@@ -27,14 +27,15 @@ const Homepage = () => {
         <div className="w-full lg:w-1/2 flex flex-col gap-6 justify-center items-start text-center sm:text-left">
           {/* TITLE */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight dark:text-white">
-            Crafting Digital Experiences, Designing Tomorrow.
+            Junior Software Engineer Building Modern Web Solutions
           </h1>
 
           {/* DESCRIPTION */}
           <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-white">
-            Welcome to my digital canvas, where innovation and creativity converge.
-            With a keen eye for aesthetics and a mastery of code, my portfolio showcases
-            a diverse collection of projects that reflect my commitment to excellence.
+            I specialize in developing full-stack web applications using Java, Vert.x,
+            Angular, React, and PostgreSQL. Currently working at eTech SC, I build and
+            maintain software features across the stack — from responsive frontends to
+            robust backend APIs.
           </p>
 
           {/* BUTTONS */}
@@ -44,9 +45,9 @@ const Homepage = () => {
                 View My Work
               </button>
             </Link>
-            <Link href="/contact">
+            <Link href="/about">
               <button className="w-full sm:w-auto px-4 py-2 text-sm sm:text-base ring-1 ring-black rounded-lg hover:bg-black hover:text-white transition">
-                Contact Me
+                About Me
               </button>
             </Link>
           </div>
