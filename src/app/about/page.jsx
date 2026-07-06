@@ -41,20 +41,21 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl dark:text-white">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg dark:text-white">
-                 I&apos;m a dedicated Computer Science student with a strong focus on 
-                 front-end development. 
-                 I specialize in building responsive, 
-                 user-friendly interfaces using JavaScript, 
-                 React, Next.js, and Tailwind CSS. 
-                 I enjoy turning ideas into interactive digital experiences, 
-                 and I&apos;m always exploring new ways to improve performance, 
-                 accessibility, and design. Whether I&apos;m working on personal
-                 projects or collaborating with others, 
-                 I aim to write clean, maintainable code that brings real value to users.
+                 I&apos;m a Computer Science graduate and Junior Software Developer
+                 with professional experience building web applications using
+                 Java, Vert.x, Angular, PostgreSQL, and SQL. I specialize in both
+                 frontend and backend development, debugging, testing, and
+                 collaborating using Git and GitLab.
+            </p>
+            <p className="text-lg dark:text-white mt-4">
+                 Currently working at eTech SC, I develop and maintain software
+                 features across the full stack — from responsive Angular frontends
+                 to Vert.x backend APIs backed by PostgreSQL databases. I&apos;m
+                 also expanding my backend expertise with Go.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic dark:text-white">
-              A fast learner with a mindset built for growth and perseverance..
+              A fast learner with a mindset built for growth and perseverance.
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end text-black dark:text-white">
@@ -106,10 +107,25 @@ const AboutPage = () => {
               className="flex gap-4 flex-wrap"
             >
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Java
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 TypeScript
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                SQL
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Go
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Vert.x
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Angular
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 React.js
@@ -119,6 +135,9 @@ const AboutPage = () => {
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                PostgreSQL
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 MongoDB

@@ -8,50 +8,56 @@ const items = [
   {
     id: 1,
     color: "from-green-700 to-yellow-700",
-    title: "React Shop Management",
-    desc: "This react app is used for managing a phone repair shop for testing the code here is an account username:testuser, and a password:!testuser.",
+    title: "Dave Phone Repair Management System",
+    desc: "A full-stack MERN repair shop management system with role-based authentication, repair tracking, dashboards, and REST APIs. Built with React, Node.js, Express, and MongoDB.",
     img: '/DanD.PNG',
     link: "https://daveprojfront.onrender.com",
+    github: "https://github.com/Solohater/DaveProjFront",
   },
   {
     id: 2,
     color: "from-blue-700 to-violet-700",
-    title: "A Rocket Selling Site",
-    desc: "My first Tailwind Css Project.",
-    img: "/acam rockets.PNG",
-    link: "https://acme-rockets-cwqd.onrender.com/#hero",
+    title: "E-Commerce Store",
+    desc: "A responsive storefront built with Next.js featuring product filtering, sorting, shopping cart functionality, and a clean modern UI.",
+    img: "/e-com.PNG",
+    link: "https://e-commerce-m6g8.vercel.app",
+    github: "https://github.com/Solohater/e-commerce",
   },
   {
     id: 3,
     color: "from-violet-700 to-purple-700",
-    title: "FastFood Next app",
-    desc: "A FastFood next app.",
+    title: "Food Delivery Platform",
+    desc: "A food delivery web application for browsing restaurants, managing orders, and tracking deliveries with a modern tech stack.",
     img: "/resturant.PNG",
     link: "https://fastfood-amber-chi.vercel.app",
+    github: "https://github.com/Solohater/Food-Delivery-Platform",
   },
   {
     id: 4,
     color: "from-purple-700 to-red-700",
-    title: "Material UI",
-    desc: "My First Material Ui Project.",
-    img: "/material.PNG",
-    link: "https://materialtut.vercel.app",
+    title: "Document Management System",
+    desc: "A document management application with React frontend, Node.js/Express backend, Prisma ORM, and Neon PostgreSQL database.",
+    img: "/hero3.jpg",
+    link: "https://github.com/Solohater/Document-Management",
+    github: "https://github.com/Solohater/Document-Management",
   },
   {
     id: 5,
     color: "from-purple-700 to-yellow-700",
-    title: "Next Website",
-    desc: "My first e-commerce Next app.",
-    img: "/e-com.PNG",
-    link: "https://e-commerce-m6g8.vercel.app",
+    title: "Acme Rockets",
+    desc: "A rocket-themed landing page showcasing responsive design with Tailwind CSS.",
+    img: "/acam rockets.PNG",
+    link: "https://acme-rockets-cwqd.onrender.com/#hero",
+    github: "https://github.com/Solohater/tailwind-tut-first-project",
   },
   {
     id: 6,
     color: "from-yellow-700 to-red-700",
-    title: "A Reminder app",
-    desc: "My first react app.",
+    title: "Grocery Reminder",
+    desc: "A simple grocery list reminder app built with React — my first React project.",
     img: "/Grocery list.PNG",
     link: "https://groceryreminder.netlify.app",
+    github: "https://github.com/Solohater/react_deploy_netlify",
   },
 ];
 
@@ -83,12 +89,21 @@ const PortfolioPage = () => {
             <div className="relative w-80 h-56 md:h-64 md:w-96 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] mb-6">
               <Image src={item.img} alt={item.title} fill className="rounded-xl object-cover" />
             </div>
-            <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] mb-4 text-white">{item.desc}</p>
-            <Link href={item.link}>
-              <button className="p-2 px-6 text-sm md:text-base bg-white text-gray-800 font-semibold rounded hover:bg-gray-200 transition">
-                See Demo
-              </button>
-            </Link>
+            <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] mb-4 text-white/90">{item.desc}</p>
+            <div className="flex gap-3">
+              {item.github && (
+                <Link href={item.github} target="_blank">
+                  <button className="p-2 px-6 text-sm md:text-base bg-white/20 text-white font-semibold rounded hover:bg-white/30 transition border border-white/30">
+                    View Code
+                  </button>
+                </Link>
+              )}
+              <Link href={item.link} target="_blank">
+                <button className="p-2 px-6 text-sm md:text-base bg-white text-gray-800 font-semibold rounded hover:bg-gray-200 transition">
+                  Live Demo
+                </button>
+              </Link>
+            </div>
           </motion.div>
         ))}
       </div>
@@ -111,7 +126,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="currentColor">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer
+                Junior Software Engineer
               </textPath>
             </text>
           </motion.svg>

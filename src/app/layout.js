@@ -2,12 +2,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import TranstitionProvider from "@/components/TranstitionProvider";
 import { ThemeProvider } from "@/context/ThemeContext";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "JO Dev Portfolio App",
-  description: "The best animated portfolio page",
+  title: "Yoseph Ayalew — Junior Software Engineer",
+  description: "Portfolio of Yoseph Ayalew — Junior Software Engineer specializing in Java, Vert.x, Angular, React, and PostgreSQL.",
 };
 
 export default function RootLayout({ children }) {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
        <ThemeProvider>
        <TranstitionProvider>{children}</TranstitionProvider>
+       <Footer />
        </ThemeProvider>
        </body>
     </html>
